@@ -33,5 +33,16 @@ end
         expect(board.get_cell(2,1)).to eq "something"
       end
     end
-end
+    #struct, to create an object instead of using cell objects
+    #reduce needless dependency in test suite
+    context "#set_cell" do
+      it "updates the value of the cell object at a (x,y) coordinate" do
+        Cat = Struct.new(:value)
+        grid = [[Cat.new("cool"), "", ""], ["", "", ""], ["", "", ""]]
+        board =  Board.new(grid: grid)
+        board.set_cell(0, 0, "meow")
+        expect(board.get_cell(0,0).value).to eq "meow"
+      end
+    end
+  end
 end
