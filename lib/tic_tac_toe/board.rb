@@ -1,8 +1,14 @@
 module TicTacToe
   class Board
     attr_reader :grid
+
     def initialize(input = {})
       @grid = input.fetch(:grid, default_grid)
+    end
+
+    # query board object for value at a given (x, y)
+    def get_cell(x, y)
+      grid[y][x]
     end
 
     private
