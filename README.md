@@ -10,10 +10,13 @@ To run the game, type in your console
 ruby run_game.rb
 ```
 
-## Usage
+## Tests
 
-TODO: Write usage instructions here
+To run the tests, type in your console
 
+```ruby
+rspec ./spec/[<class_file_name_spec>].rb
+```
 
 ## Future add-ons
 
