@@ -1,4 +1,4 @@
-![game-play](https://github.com/Debiday/tictactoe-rb/tree/main/example/tic-tac-toe.gif)
+![game-play](https://github.com/Debiday/tictactoe-rb/blob/main/example/tic-tac-toe.gif)
 # TicTacToe
 
 Learning about good design practices by building tictactoe with a guide from [MrPowers](https://github.com/MrPowers/tic_tac_toe) and adding my own implementation.
